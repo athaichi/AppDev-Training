@@ -41,7 +41,7 @@ UserDefaults.standard.removeObject(forKey: "class")
             enterClearMode()
             let name = NameTextField.text ?? ""
             let classYr = ClassTextField.text ?? ""
-            DisplayLabel.text = "Welcome, " + name + "of " + classYr + "!"
+            DisplayLabel.text = "Welcome, " + name + " of " + classYr + "!"
             NameTextField.text = ""
             ClassTextField.text = ""
             DisplayLabel.isHidden = false
@@ -57,11 +57,16 @@ UserDefaults.standard.set(classYr, forKey: "class")
         if (UserDefaults.standard.object(forKey: "name") != nil) {
             let name = UserDefaults.standard.string(forKey: "name")
             let classYr = UserDefaults.standard.string(forKey: "class")
-            DisplayLabel.text = "Welcome, " + name! + "of " + classYr! + "!"
+            DisplayLabel.text = "Welcome, " + name! + " of " + classYr! + "!"
             enterClearMode()
         } else {
             enterSubmitMode()
         }
+        if (Dog.NumberOfDogs == 0) {
+            Dog.AddDog(name: "Zoe", image: #imageLiteral(resourceName: "images-2"), age: 4, type: "Fluffy")
+            Dog.AddDog(name: "Connie", image: #imageLiteral(resourceName: "images-1"), age: 2, type: "Puppy")
+        }
+        
     }
 
 

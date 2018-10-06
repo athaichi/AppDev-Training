@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052287E32169348900863EFE /* DogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052287E22169348900863EFE /* DogsTableViewController.swift */; };
+		052287E52169349900863EFE /* DogsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052287E42169349900863EFE /* DogsTableViewCell.swift */; };
+		052287E821693E3C00863EFE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052287E721693E3C00863EFE /* Dog.swift */; };
+		052287EC21694A9A00863EFE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052287EB21694A9A00863EFE /* DetailViewController.swift */; };
 		0597DD26215EDBAA004D1BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597DD25215EDBAA004D1BC9 /* AppDelegate.swift */; };
 		0597DD28215EDBAA004D1BC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597DD27215EDBAA004D1BC9 /* ViewController.swift */; };
 		0597DD2B215EDBAA004D1BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0597DD29215EDBAA004D1BC9 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052287E22169348900863EFE /* DogsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsTableViewController.swift; sourceTree = "<group>"; };
+		052287E42169349900863EFE /* DogsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsTableViewCell.swift; sourceTree = "<group>"; };
+		052287E721693E3C00863EFE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		052287EB21694A9A00863EFE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0597DD22215EDBAA004D1BC9 /* Toy2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toy2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0597DD25215EDBAA004D1BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0597DD27215EDBAA004D1BC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052287E621693D6200863EFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				052287E721693E3C00863EFE /* Dog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0597DD19215EDBAA004D1BC9 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,10 @@
 			children = (
 				0597DD25215EDBAA004D1BC9 /* AppDelegate.swift */,
 				0597DD27215EDBAA004D1BC9 /* ViewController.swift */,
+				052287E22169348900863EFE /* DogsTableViewController.swift */,
+				052287E42169349900863EFE /* DogsTableViewCell.swift */,
+				052287EB21694A9A00863EFE /* DetailViewController.swift */,
+				052287E621693D6200863EFE /* Models */,
 				0597DD29215EDBAA004D1BC9 /* Main.storyboard */,
 				0597DD2C215EDBAF004D1BC9 /* Assets.xcassets */,
 				0597DD2E215EDBAF004D1BC9 /* LaunchScreen.storyboard */,
@@ -258,6 +278,10 @@
 			files = (
 				0597DD28215EDBAA004D1BC9 /* ViewController.swift in Sources */,
 				0597DD26215EDBAA004D1BC9 /* AppDelegate.swift in Sources */,
+				052287E52169349900863EFE /* DogsTableViewCell.swift in Sources */,
+				052287EC21694A9A00863EFE /* DetailViewController.swift in Sources */,
+				052287E821693E3C00863EFE /* Dog.swift in Sources */,
+				052287E32169348900863EFE /* DogsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
