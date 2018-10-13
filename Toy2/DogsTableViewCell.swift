@@ -2,7 +2,7 @@ import UIKit
 
 class DogsTableViewCell: UITableViewCell {
 
-     @IBOutlet weak var NameLabel: UILabel!
+    @IBOutlet weak var NameLabel: UILabel!
     @IBOutlet weak var ImageView: UIImageView!
     
     

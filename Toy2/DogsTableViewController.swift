@@ -31,18 +31,13 @@ class DogsTableViewController: UITableViewController {
 
         cell.NameLabel.text = Dog.DogsArr[indexPath.row].name
         cell.ImageView.image = Dog.DogsArr[indexPath.row].image
-        }
         
         return cell
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100}
-
-    func tableView(_ tableView: UITableView, widthForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150}
-
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -86,7 +81,7 @@ class DogsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "DogDetailSegue") {
             let DestVC = segue.destination as! DetailViewController
-            let indexPath = DogsTableViewController.tableView.indexPath(for: sender as! DogsTableViewCell)
+            let indexPath = self.tableView.indexPath(for: sender as! DogsTableViewCell)
             let row = indexPath?.row
             
             DestVC.name = Dog.DogsArr[row!].name
@@ -96,8 +91,5 @@ class DogsTableViewController: UITableViewController {
             
             
         }
-
     }
-
-
-
+}

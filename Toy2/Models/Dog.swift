@@ -15,5 +15,23 @@ class Dog: NSObject {
         DogsArr.append(DogCellInfo(name: name, image: image, age: age, type: type))
         NumberOfDogs += 1
     }
+    
+    class func loadCats(completion : @escaping (Array<Dictionary<String,String>>) -> Void) -> Void {
+        let url = URL(string: "https://chenziwei.com/cats")
+        let session = URLSession (configuration: .default)
+        var request = URLRequest (url: url!)
+        request.httpMethod = "GET"
+        let task = session.dataTask(with: request) { (data, response, error) in
+            if (error != nil) {
+                print("Failed to load dogs :(")
+                return
+            }
+            print("Got cats (should be dogs but aren't)!")
+            let result = try? JSONSerialization.jsonObject(with: data!, options: []) as! Array<Dictionary<String,String>>
+            
+            completion(result!)
+        }
+        task.resume()
+    }
 }
 

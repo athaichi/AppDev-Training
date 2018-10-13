@@ -150,31 +150,29 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="121.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noE-w7-29p">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noE-w7-29p">
                                             <rect key="frame" x="16" y="40" width="118" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i7P-1P-ATk">
-                                            <rect key="frame" x="210" y="12" width="149" height="77"/>
+                                            <rect key="frame" x="259" y="22" width="100" height="77"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="77" id="7kT-Oc-tMi"/>
-                                                <constraint firstAttribute="width" constant="149" id="I1N-vK-vtC"/>
+                                                <constraint firstAttribute="width" constant="100" id="1AK-sg-i17"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="i7P-1P-ATk" firstAttribute="centerY" secondItem="noE-w7-29p" secondAttribute="centerY" id="SXz-Dk-f2D"/>
-                                        <constraint firstItem="i7P-1P-ATk" firstAttribute="trailing" secondItem="7oe-a5-l14" secondAttribute="trailingMargin" id="cnn-Pa-RgY"/>
-                                        <constraint firstItem="i7P-1P-ATk" firstAttribute="top" secondItem="7oe-a5-l14" secondAttribute="topMargin" constant="1" id="qNw-B8-XzT"/>
-                                        <constraint firstItem="i7P-1P-ATk" firstAttribute="leading" secondItem="noE-w7-29p" secondAttribute="trailing" constant="76" id="rhI-rG-RAW"/>
+                                        <constraint firstItem="i7P-1P-ATk" firstAttribute="trailing" secondItem="7oe-a5-l14" secondAttribute="trailingMargin" id="eJS-SV-df2"/>
+                                        <constraint firstItem="i7P-1P-ATk" firstAttribute="top" secondItem="7oe-a5-l14" secondAttribute="topMargin" constant="11" id="l2U-Pp-lcq"/>
+                                        <constraint firstItem="i7P-1P-ATk" firstAttribute="centerY" secondItem="7oe-a5-l14" secondAttribute="centerY" id="zv8-r6-aS6"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="ImageView" destination="i7P-1P-ATk" id="aR2-sE-laJ"/>
                                     <outlet property="NameLabel" destination="noE-w7-29p" id="rBX-0b-Zmq"/>
-                                    <outlet property="NameLable" destination="noE-w7-29p" id="Ou8-Dc-nqU"/>
                                     <segue destination="46c-uN-Whu" kind="show" identifier="DogDetailSegue" id="QZJ-Ug-eC4"/>
                                 </connections>
                             </tableViewCell>

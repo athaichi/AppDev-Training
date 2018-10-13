@@ -63,12 +63,13 @@ UserDefaults.standard.set(classYr, forKey: "class")
             enterSubmitMode()
         }
         if (Dog.NumberOfDogs == 0) {
-            Dog.AddDog(name: "Zoe", image: #imageLiteral(resourceName: "images-2"), age: 4, type: "Fluffy")
-            Dog.AddDog(name: "Connie", image: #imageLiteral(resourceName: "images-1"), age: 2, type: "Puppy")
+            Dog.loadCats{(result) in
+                for dict in result {
+                    let imageURL = URL(string: dict["image"]!)
+                    let image = UIImage(data: try! Data(contentsOf: imageURL!) )
+                    Dog.AddDog(name: dict["name"]!, image: image!, age: Int(dict["age"]!), type: dict["type"]!)
+            }
         }
-        
     }
-
-
 }
-
+}
