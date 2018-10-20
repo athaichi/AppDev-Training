@@ -17,7 +17,7 @@ class Dog: NSObject {
     }
     
     class func loadCats(completion : @escaping (Array<Dictionary<String,String>>) -> Void) -> Void {
-        let url = URL(string: "https://chenziwei.com/cats")
+        let url = URL(string: "http://chenziwe.com/cats")
         let session = URLSession (configuration: .default)
         var request = URLRequest (url: url!)
         request.httpMethod = "GET"

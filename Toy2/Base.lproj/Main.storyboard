@@ -120,7 +120,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dogs Log" id="A77-gA-eqy"/>
+                    <navigationItem key="navigationItem" title="Dogs Log" id="A77-gA-eqy">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="FBj-ZU-nMl">
+                            <connections>
+                                <segue destination="k7C-vn-OPT" kind="presentation" id="MHa-oI-LpS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ClassLabel" destination="ebH-Tv-1zF" id="3q6-bh-wTe"/>
                         <outlet property="ClassTextField" destination="egO-bg-ZXl" id="f77-gI-ah4"/>
@@ -158,7 +164,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i7P-1P-ATk">
-                                            <rect key="frame" x="259" y="22" width="100" height="77"/>
+                                            <rect key="frame" x="259" y="22" width="100" height="77.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="1AK-sg-i17"/>
                                             </constraints>
@@ -186,6 +192,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Bv-Xa-C7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1908" y="133.5832083958021"/>
+        </scene>
+        <!--Add Dog-->
+        <scene sceneID="KoU-g2-tZO">
+            <objects>
+                <viewController id="1Ev-kz-JUv" customClass="AddDogViewController" customModule="Toy2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4s9-1l-B7l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cIO-he-s2a">
+                                <rect key="frame" x="67" y="127" width="240" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddDogCell" rowHeight="169" id="aQ2-72-g5D" customClass="AddDogTableViewCell" customModule="Toy2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aQ2-72-g5D" id="onU-mu-MGU">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="168.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P6U-Ot-mSm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="169"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adh-xq-uej">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="168.5"/>
+                                                </pickerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Adh-xq-uej" secondAttribute="bottom" id="3Xs-R7-Hqf"/>
+                                                <constraint firstAttribute="bottom" secondItem="P6U-Ot-mSm" secondAttribute="bottom" id="N2o-dF-nVt"/>
+                                                <constraint firstAttribute="trailing" secondItem="Adh-xq-uej" secondAttribute="trailing" id="bAV-Pf-Nct"/>
+                                                <constraint firstItem="Adh-xq-uej" firstAttribute="leading" secondItem="onU-mu-MGU" secondAttribute="leading" id="lvB-oX-QGP"/>
+                                                <constraint firstItem="Adh-xq-uej" firstAttribute="top" secondItem="onU-mu-MGU" secondAttribute="top" id="uDp-qo-5Rs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="PickerView" destination="Adh-xq-uej" id="5Y7-nq-tAT"/>
+                                            <outlet property="TextView" destination="P6U-Ot-mSm" id="c2K-Pm-DjF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NFp-ay-Fgw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Dog" id="Vae-ne-Qpy">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="A5e-ch-Jxu">
+                            <connections>
+                                <action selector="ClearButtonTapped:" destination="1Ev-kz-JUv" id="AVs-0I-VEk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="PvC-Ri-6Ay">
+                            <connections>
+                                <action selector="DoneButtonTapped:" destination="1Ev-kz-JUv" id="8Hd-nr-XV3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="DoneButton" destination="PvC-Ri-6Ay" id="9Bu-oi-DfK"/>
+                        <outlet property="TableView" destination="cIO-he-s2a" id="Zog-6I-551"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gs0-lJ-qt1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="887.40629685157433"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="az4-lp-Ct3">
@@ -274,6 +350,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4O-qo-9f3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1qL-t0-ln6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k7C-vn-OPT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Akq-SM-Xyh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Ev-kz-JUv" kind="relationship" relationship="rootViewController" id="nZb-SK-Vny"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ct7-tg-38f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="888"/>
         </scene>
     </scenes>
 </document>
