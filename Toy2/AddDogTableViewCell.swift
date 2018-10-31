@@ -56,11 +56,12 @@ class AddDogTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDa
     func textViewDidBeginEditing(_ textView: UITextView) {
         if (textView.textColor == UIColor.gray) {
             textView.text = ""
+            textView.textColor = UIColor.black
         }
     }
     
     func textViewDidChange(_ textView: UITextView) {
-        if (textView.text == "") {
+        if (textView.text != "") {
             if (textView.tag == 0) {
                 name = textView.text
             } else {
@@ -78,7 +79,6 @@ class AddDogTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDa
         if (textView.text == "") {
             if (textView.tag == 0) {
                 textView.text = "Name"
-                textView.textColor = UIColor.black
             } else {
                 textView.text = "Type"
             }
