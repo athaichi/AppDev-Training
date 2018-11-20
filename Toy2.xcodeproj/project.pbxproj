@@ -13,6 +13,7 @@
 		052287EC21694A9A00863EFE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052287EB21694A9A00863EFE /* DetailViewController.swift */; };
 		052287F02179746200863EFE /* AddDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052287EF2179746200863EFE /* AddDogViewController.swift */; };
 		052287F2217974A200863EFE /* AddDogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052287F1217974A200863EFE /* AddDogTableViewCell.swift */; };
+		054CCBEE218E725300A0E033 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054CCBED218E725300A0E033 /* IntroViewController.swift */; };
 		0597DD26215EDBAA004D1BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597DD25215EDBAA004D1BC9 /* AppDelegate.swift */; };
 		0597DD28215EDBAA004D1BC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597DD27215EDBAA004D1BC9 /* ViewController.swift */; };
 		0597DD2B215EDBAA004D1BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0597DD29215EDBAA004D1BC9 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		052287EB21694A9A00863EFE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		052287EF2179746200863EFE /* AddDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewController.swift; sourceTree = "<group>"; };
 		052287F1217974A200863EFE /* AddDogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogTableViewCell.swift; sourceTree = "<group>"; };
+		054CCBED218E725300A0E033 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		0597DD22215EDBAA004D1BC9 /* Toy2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toy2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0597DD25215EDBAA004D1BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0597DD27215EDBAA004D1BC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				052287EB21694A9A00863EFE /* DetailViewController.swift */,
 				052287EF2179746200863EFE /* AddDogViewController.swift */,
 				052287F1217974A200863EFE /* AddDogTableViewCell.swift */,
+				054CCBED218E725300A0E033 /* IntroViewController.swift */,
 				052287E621693D6200863EFE /* Models */,
 				0597DD29215EDBAA004D1BC9 /* Main.storyboard */,
 				0597DD2C215EDBAF004D1BC9 /* Assets.xcassets */,
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054CCBEE218E725300A0E033 /* IntroViewController.swift in Sources */,
 				0597DD28215EDBAA004D1BC9 /* ViewController.swift in Sources */,
 				052287F02179746200863EFE /* AddDogViewController.swift in Sources */,
 				052287F2217974A200863EFE /* AddDogTableViewCell.swift in Sources */,

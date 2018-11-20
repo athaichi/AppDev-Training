@@ -51,7 +51,8 @@ class AddDogTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDa
             addDogViewController?.DoneButton.isEnabled = true
         }
     }
-
+    
+    
     // MARK: - Text View Methods
     func textViewDidBeginEditing(_ textView: UITextView) {
         if (textView.textColor == UIColor.gray) {

@@ -79,6 +79,9 @@ class AddDogViewController: UIViewController, UITableViewDelegate, UITableViewDa
             } else {
                 cell.TextView.isHidden = true
                 cell.PickerView.isHidden = false
+                if (age != -1) {
+                    cell.PickerView.selectRow(age, inComponent: 0, animated: false)
+                }
             }
         }
         
@@ -104,7 +107,7 @@ class AddDogViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if (indexPath.section == 0 && indexPath.row == 1) {
+        if (indexPath.section == 1 && indexPath.row == 0) {
             if (isPickerViewOpened) {
                 isPickerViewOpened = false
             } else {

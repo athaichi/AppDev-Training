@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l2n-PX-Jn9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oIx-G8-RSh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -77,7 +77,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLG-fz-jBy">
-                                <rect key="frame" x="128" y="544" width="119" height="30"/>
+                                <rect key="frame" x="128" y="495" width="119" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="t3e-7l-acv"/>
                                 </constraints>
@@ -127,6 +127,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ClassLabel" destination="ebH-Tv-1zF" id="3q6-bh-wTe"/>
                         <outlet property="ClassTextField" destination="egO-bg-ZXl" id="f77-gI-ah4"/>
@@ -138,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2020" y="133.5832083958021"/>
         </scene>
         <!--Dogs Table View Controller-->
         <scene sceneID="FnP-i0-da3">
@@ -191,7 +192,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Bv-Xa-C7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2847.1999999999998" y="133.5832083958021"/>
         </scene>
         <!--Add Dog-->
         <scene sceneID="KoU-g2-tZO">
@@ -264,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gs0-lJ-qt1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="887.40629685157433"/>
+            <point key="canvasLocation" x="2847" y="872"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="az4-lp-Ct3">
@@ -334,12 +335,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBt-Wf-5du" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719" y="134"/>
+            <point key="canvasLocation" x="3656.8000000000002" y="133.5832083958021"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Animals-->
         <scene sceneID="fkC-vZ-qjP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l2n-PX-Jn9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Animals" image="book" id="peP-ab-3rN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LKa-wo-zKO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -352,7 +354,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4O-qo-9f3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1080.8" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1qL-t0-ln6">
@@ -370,7 +372,56 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ct7-tg-38f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1081" y="888"/>
+            <point key="canvasLocation" x="2020" y="873"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="1S8-kL-IJM">
+            <objects>
+                <viewController id="jcP-oz-mh9" customClass="IntroViewController" customModule="Toy2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FJb-bZ-nbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jfj-5x-Ivj">
+                                <rect key="frame" x="67" y="265" width="240" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Hi! My name is L and I'm a Grinnellian learning how to make apps! This app shows a mix of cats and dogs for you to view, name and insert as you wish. Happy viewing!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dfe-xf-Ujm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="user_male" id="yK6-6N-a2i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6DP-Qa-YUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="134"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Gkt-xU-qAW">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oIx-G8-RSh" customClass="TabBarController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z5r-W3-EQc">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="l2n-PX-Jn9" kind="relationship" relationship="viewControllers" id="aSJ-AK-zdX"/>
+                        <segue destination="jcP-oz-mh9" kind="relationship" relationship="viewControllers" id="1Uj-1R-htY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMb-XF-NhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="-865"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book" width="30" height="30"/>
+        <image name="user_male" width="30" height="30"/>
+    </resources>
 </document>
